@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,14 +8,33 @@
 
 html,
 body {
+  background-color:
+    Linear,
+    135deg,
+    from hsl(0, 0%, 100%),
+    to hsl(0, 100%, 98%);
   width: 100%;
   height: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   /* display: flex; */
+  /* background-color: aqua; */
+}
+
+main {
+  display: flex;
+  object-fit: cover;
+  overflow: hidden;
+  overflow-y: hidden;
+}
+
+p {
+  color: hsl(0, 36%, 70%);
 }
 
 .left-side {
-  border: 2px solid black;
-  /* background-color: red; */
+  /* border: 2px solid black; */
   width: 60%;
   display: flex;
   align-items: center;
@@ -23,20 +44,66 @@ body {
   padding-right: 30rem;
 }
 
+.left-side > img {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  margin-top: -4rem;
+  /* opacity: 0.5; */
+}
 .hero-text {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   line-height: 1.2;
   font-size: 2rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-left: 7rem;
 }
 
 .first-text {
-  font-weight: lighter;
+  font-weight: 300;
+  color: hsl(0, 36%, 70%);
 }
 
-.hero-description{
-    border: 2px solid red;
-    margin-left: 3.5rem;
-    width: 140%;
+.second-text,
+.third-text {
+  color: hsl(0, 6%, 24%);
+}
+
+.hero-description {
+  /* border: 2px solid red; */
+  margin-left: 3.5rem;
+  margin-top: 1rem;
+  width: 140%;
+}
+
+.email-address-bar-container {
+  border: 2px solid hsl(0, 36%, 70%);
+  display: flex;
+  justify-content: right;
+  border-radius: 50px;
+  margin-left: 16rem;
+  margin-top: 3.4rem;
+  margin-bottom: 3rem;
+  height: 3rem;
+  width: 27rem;
+}
+
+.email-address-bar-container-right {
+  border: 2px solid black;
+  /* background-color: hsl(0, 80%, 86%); */
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  height: 3rem;
+  width: 5rem;
+  box-shadow: 0px 20px 75px 0px hsl(0, 74%, 60%);
+
+}
+
+.right-side > img {
+  height: 100%;
+  width: 100%;
 }
